@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSPlayGames</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="dsplaygames-nav-container">
         <h1>DSPlayGames</h1>
-        <ul>
-          <li><a href="#news">Notícias</a></li>
-          <li><a href="#games">Jogos</a></li>
-          <li><a href="#subscription">Inscreva-se</a></li>
-        </ul>
-        <img src="img/user.png" alt="Imagem de perfil" />
+        <div class="dsplaygames-menu-container">
+          <ul class="dsplaygames-menu-items">
+            <li><a href="#news">Notícias</a></li>
+            <li><a href="#games">Jogos</a></li>
+            <li><a href="#subscription">Inscreva-se</a></li>
+          </ul>
+          <img src="img/user.png" alt="Imagem de perfil" />
+        </div>
       </nav>
     </header>
 
     <main>
-      <section id="news">
+      <section class="dsplaygames-section-news" id="news">
         <h2>Últimas notícias</h2>
-        <div>
-          <div>
+        <div class="dsplaygames-news-container">
+          <div class="dsplaygames-card-news">
             <h3>Título principal da notícia</h3>
             <div>
               <h4>
@@ -44,7 +47,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="dsplaygames-card-news">
             <h3>Título principal da notícia</h3>
             <div>
               <h4>
@@ -64,42 +67,42 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="dsplaygames-button-news">
           <button>Carregar mais</button>
         </div>
       </section>
 
-      <section id="games">
-        <div>
+      <section class="dsplaygames-section-games" id="games">
+        <div class="dsplaygames-games-container">
           <h2>Jogos</h2>
-          <span>
+          <div class="dsplaygames-card-games">
             <img src="img/game.png" alt="Horizon Forbidden West" />
             <div>
               <h3>Horizon Forbidden West</h3>
               <p><span>De</span> Sony Interactive Entertainment</p>
               <div>9.7</div>
             </div>
-          </span>
-          <span>
+          </div>
+          <div class="dsplaygames-card-games">
             <img src="img/game.png" alt="Horizon Forbidden West" />
             <div>
               <h3>Horizon Forbidden West</h3>
               <p><span>De</span> Sony Interactive Entertainment</p>
               <div>9.7</div>
             </div>
-          </span>
-          <span>
+          </div>
+          <div class="dsplaygames-card-games">
             <img src="img/game.png" alt="Horizon Forbidden West" />
             <div>
               <h3>Horizon Forbidden West</h3>
               <p><span>De</span> Sony Interactive Entertainment</p>
               <div>9.7</div>
             </div>
-          </span>
+          </div>
         </div>
       </section>
 
-      <section id="subscription">
+      <section class="dsplaygames-section-subscription" id="subscription">
         <h2>Faça sua inscrição</h2>
 
         <form action="#">
@@ -153,20 +156,20 @@
     </main>
 
     <footer>
-      <div>
-        <span>
+      <div class="dsplaygames-footer-container">
+        <div class="dsplaygames-footer-social-media">
           <a href="#">@dsplaygames</a>
           <a href="#">/dsplaygames</a>
-        </span>
+        </div>
 
-        <span>
+        <div class="dsplaygames-footer-copyright">
           <p>DS Play Games Ltda. Todos direitos reservados</p>
-        </span>
+        </div>
 
-        <span>
+        <div class="dsplaygames-footer-links-container">
           <a href="#">Política de privacidade</a>
           <a href="#">Termos de uso</a>
-        </span>
+        </div>
       </div>
     </footer>
   </body>
