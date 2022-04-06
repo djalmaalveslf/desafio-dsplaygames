@@ -25,7 +25,7 @@
 
     <main>
       <section class="dsplaygames-section-news" id="news">
-        <h2>Últimas notícias</h2>
+        <h2 class="dsplaygames-title-news">Últimas notícias</h2>
         <div class="dsplaygames-news-container">
           <div class="dsplaygames-card-news">
             <h3>Título principal da notícia</h3>
@@ -34,7 +34,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam.
               </h4>
-              <p>23/02/2022</p>
+              <p class="dsplaygames-data-news">23/02/2022</p>
             </div>
             <div>
               <p>
@@ -54,7 +54,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam.
               </h4>
-              <p>23/02/2022</p>
+              <p class="dsplaygames-data-news">23/02/2022</p>
             </div>
             <div>
               <p>
@@ -75,28 +75,30 @@
       <section class="dsplaygames-section-games" id="games">
         <div class="dsplaygames-games-container">
           <h2>Jogos</h2>
-          <div class="dsplaygames-card-games">
-            <img src="img/game.png" alt="Horizon Forbidden West" />
-            <div>
-              <h3>Horizon Forbidden West</h3>
-              <p><span>De</span> Sony Interactive Entertainment</p>
-              <div>9.7</div>
+          <div class="dsplaygames-container-card-games">
+            <div class="dsplaygames-card-games">
+              <img src="img/game.png" alt="Horizon Forbidden West" />
+              <div class="dsplaygames-card-text-container">
+                <h3>Horizon Forbidden West</h3>
+                <p><span>De</span> Sony Interactive Entertainment</p>
+                <div class="dsplaygames-card-number">9.7</div>
+              </div>
             </div>
-          </div>
-          <div class="dsplaygames-card-games">
-            <img src="img/game.png" alt="Horizon Forbidden West" />
-            <div>
-              <h3>Horizon Forbidden West</h3>
-              <p><span>De</span> Sony Interactive Entertainment</p>
-              <div>9.7</div>
+            <div class="dsplaygames-card-games">
+              <img src="img/game.png" alt="Horizon Forbidden West" />
+              <div class="dsplaygames-card-text-container">
+                <h3>Horizon Forbidden West</h3>
+                <p><span>De</span> Sony Interactive Entertainment</p>
+                <div class="dsplaygames-card-number">9.7</div>
+              </div>
             </div>
-          </div>
-          <div class="dsplaygames-card-games">
-            <img src="img/game.png" alt="Horizon Forbidden West" />
-            <div>
-              <h3>Horizon Forbidden West</h3>
-              <p><span>De</span> Sony Interactive Entertainment</p>
-              <div>9.7</div>
+            <div class="dsplaygames-card-games">
+              <img src="img/game.png" alt="Horizon Forbidden West" />
+              <div class="dsplaygames-card-text-container">
+                <h3>Horizon Forbidden West</h3>
+                <p><span>De</span> Sony Interactive Entertainment</p>
+                <div class="dsplaygames-card-number">9.7</div>
+              </div>
             </div>
           </div>
         </div>
@@ -105,53 +107,51 @@
       <section class="dsplaygames-section-subscription" id="subscription">
         <h2>Faça sua inscrição</h2>
 
-        <form action="#">
-          <div>
-            <input
-              id="ctrl-name"
-              type="text"
-              name="name"
-              placeholder="Nome completo"
-            />
-          </div>
-
-          <div>
-            <input
-              id="ctrl-email"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
-          </div>
-
-          <div>
-            <label for="ctrl-level">Qual sua plataforma preferida?</label>
-            <div>
+        <div class="dsplaygames-subscription-container">
+          <form action="#">
+            <div class="dsplaygames-form-placeholder">
+              <input
+                id="ctrl-name"
+                type="text"
+                name="name"
+                placeholder="Nome completo"
+              />
+            </div>
+            <div class="dsplaygames-form-placeholder">
+              <input
+                id="ctrl-email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="dsplaygames-ctrl-level-container">
+              <label for="ctrl-level">Qual sua plataforma preferida?</label>
               <div>
-                <input type="radio" name="level" id="ctrl-level-1" />
-                <label for="ctrl-level-1">PC</label>
-              </div>
-              <div>
-                <input type="radio" name="level" id="ctrl-level-2" />
-                <label for="ctrl-level-2">Xbox</label>
-              </div>
-              <div>
-                <input type="radio" name="level" id="ctrl-level-3" />
-                <label for="ctrl-level-3">PlayStation</label>
+                <div class="dsplaygames-ctrl-level">
+                  <input type="radio" name="level" id="ctrl-level-1" />
+                  <label for="ctrl-level-1">PC</label>
+                </div>
+                <div class="dsplaygames-ctrl-level">
+                  <input type="radio" name="level" id="ctrl-level-2" />
+                  <label for="ctrl-level-2">Xbox</label>
+                </div>
+                <div class="dsplaygames-ctrl-level">
+                  <input type="radio" name="level" id="ctrl-level-3" />
+                  <label for="ctrl-level-3">PlayStation</label>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div>
-            <input id="ctrl-receive" name="receive-news" type="checkbox">
-            <label for="ctrl-receive">Desejo receber novidades</label>
-          </div>
-
-          <div>
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpar" />
-          </div>
-        </form>
+            <div class="dsplaygames-receive-container">
+              <input id="ctrl-receive" name="receive-news" type="checkbox">
+              <label for="ctrl-receive">Desejo receber novidades</label>
+            </div>
+            <div class="dsplaygames-subscription-buttons-container">
+              <input class="dsplaygames-submit-button" type="submit" value="Enviar" />
+              <input class="dsplaygames-reset-button" type="reset" value="Limpar" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
